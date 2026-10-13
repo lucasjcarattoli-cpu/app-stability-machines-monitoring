@@ -2,17 +2,17 @@
 
 Sistema integral para el monitoreo continuo, auditoría de anomalías y predicción térmica de las cámaras de estabilidad CES05 (Zona II) y CES06 (Zona IV) utilizando sensores múltiples y modelos de Machine Learning.
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 Esta herramienta automatiza el análisis de datos de los registradores de las cámaras de estabilidad, cruzando variables térmicas y de humedad con la bitácora de incidentes operativos (logbook). El objetivo es garantizar la integridad de los estudios *ongoing*, detectar fallas tempranas de homogeneidad espacial y proyectar el comportamiento futuro mediante Random Forest.
 
-## ✨ Características Principales
+## Características Principales
 * **Visualización Multisensor:** Monitoreo interactivo simultáneo de 4 sensores de temperatura y 4 de humedad, adaptado automáticamente a los límites regulatorios de cada Zona (II y IV).
 * **Auditoría Automatizada:** Detección estricta de excursiones térmicas e higrométricas y generación de reportes listos para exportar.
 * **Análisis de Homogeneidad (Puntos Críticos):** Cálculo en tiempo real del gradiente espacial (diferencia Max-Min) para anticipar fallas de recirculación de aire.
 * **Modelo Predictivo (Forecasting):** Algoritmo Random Forest Regressor que proyecta la temperatura a 7, 14, 21 y 28 días, aislando fallas históricas y contemplando estacionalidad.
 * **Backtesting Visual:** Interfaz gráfica para evaluar el margen de error entre las proyecciones del modelo estadístico y la realidad operativa (MAE).
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 * **Lenguaje:** Python 3
 * **Frontend / Dashboard:** Streamlit
 * **Manipulación de Datos:** Pandas, NumPy
@@ -20,7 +20,7 @@ Esta herramienta automatiza el análisis de datos de los registradores de las c�
 * **Visualización:** Plotly Express & Graph Objects
 * **Base de Datos:** SQLite
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 ```text
 ├── data/
 │   ├── varifarma_monitoreo.db     # Base de datos SQLite unificada
